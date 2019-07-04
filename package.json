@@ -5,7 +5,9 @@
   "scripts": {
     "start": "mocha ./tests/confTest.js && nodemon --exec babel-node --presets es2015 ./bin/www",
     "debug": "mocha ./tests/confTest.js && nodemon --exec babel-node --presets es2015 --debug-brk ./bin/www",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "adal-node": "0.1.22",
@@ -15,7 +17,8 @@
     "pug": "2.0.0-rc.2",
     "serve-favicon": "2.4.3",
     "socket.io": "2.0.3",
-    "sqlite3": "3.1.8"
+    "sqlite3": "3.1.8",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
@@ -29,5 +32,6 @@
     "gulp-plumber": "1.1.0",
     "mocha": "3.4.2",
     "nodemon": "1.11.0"
-  }
+  },
+  "snyk": true
 }
