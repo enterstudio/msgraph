@@ -8,7 +8,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "adal-node": "0.1.22",
+    "adal-node": "0.2.4",
     "body-parser": "1.17.2",
     "express": "4.15.3",
     "morgan": "1.8.2",
