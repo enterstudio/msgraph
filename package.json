@@ -10,7 +10,7 @@
   "dependencies": {
     "adal-node": "0.1.22",
     "body-parser": "1.17.2",
-    "express": "4.15.3",
+    "express": "4.19.2",
     "morgan": "1.8.2",
     "pug": "2.0.0-rc.2",
     "serve-favicon": "2.4.3",
